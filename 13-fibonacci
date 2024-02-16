@@ -2,7 +2,7 @@ public Integer fibonacci(Integer n) {
     //code here
     if(n == 1 || n == 2) return 1;
     
-    Integer a = 0;
+    Integer a = 1;
     Integer b = 1;
     Integer sum;
 
