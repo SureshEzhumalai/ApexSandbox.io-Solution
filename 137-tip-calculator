@@ -1,7 +1,7 @@
 public Decimal computeTip(Decimal total, Integer percent) {
     //code here
     if(total < 0 || percent < 0){
-        return Decimal.valueOf(0.0);
+        return 0.0;
     }
     return total * (percent/100.0);
 
