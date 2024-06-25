@@ -28,9 +28,9 @@ public Integer rockPaperScissors(String player1, String player2) {
 
     // one more way
     Map<String, String> winMap = new Map<String, String>();
-    winMap.put('rock' : 'scissors');
-    winMap.put('scissors': 'paper');
-    winMap.put('paper' : 'rock');
+    winMap.put('rock', 'scissors');
+    winMap.put('scissors', 'paper');
+    winMap.put('paper' , 'rock');
 
     if(player1 == player2) return 0;
 
