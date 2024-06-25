@@ -32,7 +32,7 @@ public Integer rockPaperScissors(String player1, String player2) {
     winMap.put('scissors', 'paper');
     winMap.put('paper' , 'rock');
 
-    if(player1 == player2) return 0;
+    if(winMap.get(player1) == winMap.get(player2)) return 0;
 
     if( winMap.get(player1) == player2){
         return 1;
