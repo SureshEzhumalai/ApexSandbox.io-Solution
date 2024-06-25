@@ -1,6 +1,6 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
-    if( (player1 == 'rock' && player2 == 'scissors') ||
+  /*  if( (player1 == 'rock' && player2 == 'scissors') ||
         (player1 == 'scissors' && player2 == 'paper') ||
         (player1 == 'paper' && player2 == 'rock')
     ){
@@ -12,5 +12,17 @@ public Integer rockPaperScissors(String player1, String player2) {
                 return 2;
     }else{
         return 0;
+    } */
+
+    //other version
+    if(player1 == player2) return 0;
+
+    if((player1 == 'rock' && player2 == 'scissors') ||
+        (player1 == 'scissors' && player2 == 'paper') ||
+        (player1 == 'paper' && player2 == 'rock')
+    ){
+        return 1;
+    }else{
+        return 2;
     }
 }
