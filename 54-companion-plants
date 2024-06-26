@@ -1,0 +1,15 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    Map<String, List<String>> comMap = new Map<String, List<String>>();
+    comMap.put('lettuce', new List<String>{'cucumbers', 'onions'});
+    conMap.put('cucumbers', new List<String>{'lettuce'});
+    conMap.put('onions', new List<String>{'lettuce', 'carrots', 'tomatoes'});
+    conMap.put('carrots', new List<String>{'onions'});
+    conMap.put('tomatoes', new List<String>{'onions'});
+
+    if(conMap.containsKey(plant1) && conMap.containsKey(plant1).contains(plant2)){
+        return true;
+    }else{
+        return false;
+    }
+}
