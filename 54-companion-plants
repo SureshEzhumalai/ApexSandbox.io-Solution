@@ -7,7 +7,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     comMap.put('carrots', new List<String>{'onions'});
     comMap.put('tomatoes', new List<String>{'onions'});
 
-    if(comMap.containsKey(plant1) && comMap.containsKey(plant1).contains(plant2)){
+    if(comMap.containsKey(plant1) && comMap.get(plant1).contains(plant2)){
         return true;
     }else{
         return false;
