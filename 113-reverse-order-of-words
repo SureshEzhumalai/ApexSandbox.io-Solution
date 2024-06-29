@@ -3,7 +3,7 @@ public String reverseWordsInASentence(String sentence){
     List<String> strList = sentence.split(' ');
     String revStr = '';
     for(Integer i = strList.size() -1 ; i >= 0;i--){
-        revStr = revStr + ' ' + strList[i];
+        revStr = revStr + ' ' + strList[i] + ' ';
     }
     return revStr;
 }
