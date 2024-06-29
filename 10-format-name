@@ -2,9 +2,9 @@ public String formatName(String firstName, String lastName) {
     //code here
     if(firstName != NULL && lastName != NULL){
         return lastName + ', ' + firstName;
-    }else if(firstName == NULL){
+    }else if(firstName == NULL || firstName == ''){
         return lastName;
-    }else if(lastName == NULL){
+    }else if(lastName == NULL || lastName ==''){
         return firstName;
     }else{
         return '';
